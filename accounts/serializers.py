@@ -7,7 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
         user = User.objects.create(
             username=["username"],
             password=["password"],
-            email=data["email"],
+            email=["email"],
             name=["name"],
             nickname=["nickname"],
             birthdate=["birthdate"],
@@ -33,5 +33,12 @@ class UserSerializer(serializers.ModelSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = "__all__"
-        exclude = "password"
+        fields = [
+            "username",
+            "email",
+            "name",
+            "nickname",
+            "birthdate",
+            "gender",
+            "Self_introduction",
+        ]
