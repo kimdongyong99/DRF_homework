@@ -18,4 +18,4 @@ class User(AbstractUser):
     gender = models.CharField(
         choices=GENDER_CHOICES, max_length=10, null=True, blank=True
     )
-    Self_introduction = models.TextField(blank=True)
+    Self_introduction = models.TextField(blank=True, null=True)
