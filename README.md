@@ -9,6 +9,8 @@
     - [products](#products)
     - [users](#users)
 - [사용한 기술](#사용한-기술)
+- [ERD](#ERD)
+- [기술점검](#기술점검)
 
 ## 프로젝트 설명
 
