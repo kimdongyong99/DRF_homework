@@ -45,7 +45,8 @@ accounts(회원기능)
 - djangorestframework-simplejwt==5.3.1
 
 ## ERD
-![image](https://github.com/user-attachments/assets/33eb1e65-175e-4232-88f1-97beffc76a4b)
+![image](https://github.com/user-attachments/assets/fd88e396-cc76-41fc-b714-4218e4dee53c)
+
 
 ## 기능 점검
 
