@@ -37,12 +37,30 @@ accounts(회원기능)
 
 
 ## 사용한 기술
-- Django 4.2
-- Pycharm
-- github
-- django-seed==0.3.1
-- djangorestframework==3.15.2
-- djangorestframework-simplejwt==5.3.1
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+executing==2.0.1
+Faker==28.4.1
+jedi==0.19.1
+matplotlib-inline==0.1.7
+mypy-extensions==1.0.0
+packaging==24.1
+parso==0.8.4
+pathspec==0.12.1
+pillow==10.4.0
+platformdirs==4.2.2
+prompt_toolkit==3.0.47
+psycopg2==2.9.9
+pure_eval==0.2.3
+Pygments==2.18.0
+PyJWT==2.9.0
+python-dateutil==2.9.0.post0
+six==1.16.0
+sqlparse==0.5.1
+toposort==1.10
+traitlets==5.14.3
+tzdata==2024.1
+wcwidth==0.2.13
 
 ## ERD
 ![image](https://github.com/user-attachments/assets/fd88e396-cc76-41fc-b714-4218e4dee53c)
