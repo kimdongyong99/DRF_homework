@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 # Create your views here.
 
@@ -38,15 +38,12 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class ProductListAPIView(APIView):
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
     def get(self, request):
         products = Product.objects.all()
         serializer = Productserializer(products, many=True)
         return Response(serializer.data)
-
-
-class ProductCreateAPIView(APIView):
-    permission_classes = [IsAuthenticated]
 
     def post(self, request):
         serializer = Productserializer(data=request.data)
@@ -56,7 +53,7 @@ class ProductCreateAPIView(APIView):
 
 
 class ProductDetailAPIView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
     def get_object(self, pk):
         return get_object_or_404(Product, pk=pk)
